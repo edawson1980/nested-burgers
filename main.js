@@ -6,13 +6,13 @@ let bobsFollowers = ['Linda', 'Teddy', 'Gene', 'Louise'];
 let tinasFollowers = ['Jimmy Jr.', 'Gene', 'Louise'];
 let mutualFollowers = [];
 
-for(let bob = 0; bob < bobsFollowers.length; bob++){ //this is the outer loop
+for(let b = 0; b < bobsFollowers.length; b++){ //this is the outer loop
   /*this is the inner loop.  every time the outer loop runs,
   the inner loop goes through an entire rotation.  meaning, every time the bobsFollowers loop runs, tina's loop runs and checks
   if they have any mutual friends.  if they do, that name gets pushed to the mutualFollowers array */
-  for(let tina = 0; tina < tinasFollowers.length; tina++){
-    if(bobsFollowers[bob] === tinasFollowers[tina]){
-      mutualFollowers.push(tinasFollowers[tina]);
+  for(let t = 0; t < tinasFollowers.length; t++){
+    if(bobsFollowers[b] === tinasFollowers[t]){
+      mutualFollowers.push(tinasFollowers[t]);
     }
   }
 
